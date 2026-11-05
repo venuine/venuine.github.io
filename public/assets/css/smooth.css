@@ -1,0 +1,23 @@
+/* Keep directional movement inside the content viewport, preserving page layout. */
+main{overflow:hidden!important;isolation:isolate}
+.entrance-dial{animation:dial-revolutions 3.7s cubic-bezier(.25,.55,.3,1) both}
+.entrance-dial span{animation:inner-revolutions 3.7s ease-out both}
+.entrance-hands{position:absolute;width:360px;height:360px;border-radius:50%;opacity:.38}
+.entrance-hands i,.entrance-hands b{position:absolute;left:50%;bottom:50%;width:1px;background:linear-gradient(0deg,#e7d29b,#bca16a);transform-origin:50% 100%;height:170px;animation:clock-hand-spin 3.7s cubic-bezier(.25,.55,.3,1) both}
+.entrance-hands b{height:115px;width:2px;animation-name:clock-hand-short}
+@keyframes dial-revolutions{from{transform:rotate(-1080deg) scale(.92);opacity:0}15%{opacity:.7}to{transform:rotate(15deg) scale(1);opacity:.7}}
+@keyframes inner-revolutions{from{transform:rotate(720deg)}to{transform:rotate(0)}}
+@keyframes clock-hand-spin{from{transform:rotate(-1440deg)}to{transform:rotate(35deg)}}
+@keyframes clock-hand-short{from{transform:rotate(1080deg)}to{transform:rotate(125deg)}}
+/* Brushed ivory deck, warm metal trim, and a charcoal spindle. */
+.stack-player-deck{background:linear-gradient(125deg,#f4f0e6 0%,#e5decf 45%,#d5c6a6 100%);border:1px solid #b69a60;border-radius:7px;box-shadow:inset 0 0 0 5px #faf6ec88,inset 0 0 0 6px #a48a5655,0 12px 25px #10121440}
+.stack-player-deck:after{content:'';position:absolute;inset:11px;border:1px solid #a68e5d44;border-radius:2px;pointer-events:none}
+.stack-player .radio-disc{border-color:#a58b5355;background:radial-gradient(circle,#eee7d4,#d5c5a177)}
+.stack-player .radio-center{background:#343536;color:#d3b77c;border-color:#ae9257}.stack-player .radio-platter{outline-color:#a58b5344}.deck-waveform i{background:#8e733c99}
+/* Fade into the right-hand field and repeat an exact number of dash periods. */
+.skill-records .skill-record>svg.woven-threads{left:54%!important;right:0!important;width:46%!important;opacity:.42!important;mask-image:linear-gradient(90deg,transparent,#000 48%,#000 85%,transparent)}
+.skill-records .woven-threads path{animation:smooth-thread-loop 18s linear infinite!important;animation-delay:var(--row-phase,0s)!important;stroke-dasharray:100 22 5 60;stroke-width:.85}
+.skill-records .woven-threads path:nth-child(even){animation-direction:reverse!important}
+@keyframes smooth-thread-loop{from{stroke-dashoffset:0}to{stroke-dashoffset:-374}}
+@media(max-width:600px){.entrance-hands{width:270px;height:270px}.entrance-hands i{height:125px}.entrance-hands b{height:90px}.skill-records .skill-record>svg.woven-threads{left:58%!important;width:42%!important}}
+@media(prefers-reduced-motion:reduce){.entrance-hands{display:none}.skill-records .woven-threads path{animation:none!important}}

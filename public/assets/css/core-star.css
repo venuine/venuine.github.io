@@ -1,0 +1,4 @@
+.ambient-core-star{position:absolute;left:50%;top:50%;width:clamp(150px,15vw,250px);height:auto;transform:translate(-50%,-50%);opacity:.18;pointer-events:none;animation:core-star-breathe 9s ease-in-out infinite}
+@keyframes core-star-breathe{0%,100%{opacity:.13}50%{opacity:.23}}
+@media(max-width:950px){.ambient-core-star{width:180px}}
+@media(prefers-reduced-motion:reduce){.ambient-core-star{animation:none!important;opacity:.18}}

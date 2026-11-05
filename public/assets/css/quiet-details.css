@@ -1,0 +1,7 @@
+.hero-under .hero-under-segments{width:clamp(110px,12vw,190px);flex:0 0 clamp(110px,12vw,190px);gap:4px;height:19px}.hero-under-segments i{opacity:.35!important;flex-basis:2px;width:2px;animation-duration:5.5s}.hero-under{min-height:40px}
+.broadcast-shell article{border:0!important;box-shadow:none!important;border-radius:0 12px 12px 0!important;overflow:hidden}.ticket-rail span{letter-spacing:2px;font-size:9px;text-transform:none;white-space:nowrap}
+@media(max-width:950px){
+ /* Quiet the decorative layer, preserving the charcoal base and readable surfaces. */
+ .ambient-orbit,.ambient-haze,.ambient-stars,.breathing-stars{opacity:.16!important}.archive-background-signal{opacity:.05!important}.pointer-light{display:none!important}.hero-under .hero-under-segments{width:125px;flex-basis:125px}.ticket-rail span{font-size:9px;letter-spacing:2px}
+}
+@media(max-width:600px){.hero-under .hero-under-segments{width:90px;flex-basis:90px;gap:2px}.hero-under{min-height:44px}.broadcast-shell article{border-radius:0 0 12px 12px!important}.ticket-rail{gap:12px}.ticket-rail i{width:30px}.ticket-rail span{font-size:8px;letter-spacing:1.5px}.ambient-orbit,.ambient-haze,.ambient-stars,.breathing-stars{opacity:.1!important}}

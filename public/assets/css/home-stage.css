@@ -1,0 +1,9 @@
+/* Hold the original stagger until the diagonal opening has cleared. */
+.intro-pending .hero-hi,.intro-pending .hero-name,.intro-pending .hero-description,.intro-pending .hero-roles,.intro-pending .hero-actions,.intro-pending .home-portrait{animation-play-state:paused!important}
+.home-portrait{left:46%;right:auto;top:0;bottom:0;width:34%;height:100%;max-height:none;padding:0;margin:0;transform:none;border:0;background:none;box-shadow:none;clip-path:none;opacity:1;z-index:3;pointer-events:none;animation:portrait-arrival 1.1s cubic-bezier(.16,1,.3,1) .3s both}
+.home-portrait:before,.home-portrait figcaption{display:none!important}.home-portrait>img{height:100%;width:100%;object-fit:contain;object-position:center bottom;display:block}
+@keyframes portrait-arrival{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:1400px) and (min-width:951px){.home-portrait{left:48%;right:auto;top:0;bottom:0;width:33%;height:100%;opacity:1;transform:none}}
+@media(max-width:950px){.home-portrait{left:54%;right:auto;top:16%;bottom:0;width:40%;height:84%;transform:none}.hero-copy{max-width:60%}}
+@media(max-width:600px){.home-portrait{left:auto;right:-12px;top:auto;bottom:0;width:65%;height:280px;transform:none}.hero-copy{max-width:100%;padding-bottom:285px}.hero-panel{min-height:800px}.hero-bottom{right:20px;left:20px;bottom:12px}.home-portrait>img{object-fit:contain;object-position:right bottom}}
+@media(prefers-reduced-motion:reduce){.home-portrait{animation:none}}
